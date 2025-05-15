@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>2025_MIN's Portfolio</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/lenis@1.3.3/dist/lenis.min.js"></script>
+<script src="js/lenis.js"></script>
+<script src="js/main.js"></script>
+<script src="js/scrolltext.js"></script>
+</head>
+
+<body>
+<!-- 전체 컨테이너 -->
+<div class="container"> 
+	<!-- 마우스 -->
+	<div id="customMouse"></div>
+	<!-- 컨트롤러 -->
+	<ul class="controller" id="contName">
+		<li><a href="">M</a></li>
+		<li><a href="">A</a></li>
+		<li><a href="">S</a></li>
+		<li><a href="">P</a></li>
+		<li><a href="">O</a></li>
+		<li><a href="">F</a></li>
+	</ul>
+	<!-- 시작부분 -->
+	<div id="start">
+		<header class="fixed" id="fixedElement">
+			<div class="inner">
+				<div class="logo"><h1>MIN</h1></div>
+				<nav id="nav">
+					<ul>
+						<li><a href="">MAIN</a></li>
+						<li><a href="">ABOUT</a></li>
+						<li><a href="">SKILLS</a></li>
+						<li><a href="">PROJECTS</a></li>
+						<li><a href="">OPEN SOURCE</a></li>
+						<li><a href="">FOOTER</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<!-- 메인 페이지 -->
+		<div class="mainP">
+			<div class="inner">
+				<div class="group_text">
+					<div class="title">
+						<div class="strong_text">
+							<h2>FRONT-END</h2>
+						</div>
+						<p>PORTFOLIO</p>
+					</div>
+					<div class="bot_text"><span>2025 © - Lee-Sungmin All Rights Reserved</span></div>
+				</div>
+			</div>
+			<!-- 메인페이지 비디오 -->
+			<div class="main_video">
+				<video id="myVideo" loop muted poster="./img/메인 썸네일.png">
+					<source src="./video/디폴트 메인 배경.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+			</div>
+		</div>
+	</div>
+	<!-- about_me -->
+	<section id="about_me">
+		<div class="inner">	
+			<div class="title">ABOUT ME</div>
+			<div class="text_box">
+				<div class="strong_text">
+					Speed Conversion, Amplification of Force
+				</div>
+				<div class="desc">
+					<div class="text1">
+						<p>저는 시계의 톱니바퀴처럼 정밀성과 효율성을 중시하는 개발자로서 최적화된 코드를 통해 시스템 성능을 극대화하고 있으며,</p>
+						기술의 발전에 발맞추어 지속적으로 학습하고 혁신을 이루고 있습니다.
+					</div>
+					<div class="text2">
+						<p>또한 변화를 두려워하지 않고 새로운 도전들을 받아들이며,</p>
+						이 과정에서 전체 시스템의 성공을 이끌어가는 진정한 개발자로 성장할 것입니다.
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- 라인 이펙트 -->
+	<div class="line_effect">
+		<div class="track line1">
+			<p class="typography" id="type1">USER INTERFACE&nbsp;USER INTERFACE&nbsp;USER INTERFACE&nbsp;USER INTERFACE&nbsp;USER INTERFACE&nbsp;USER INTERFACE&nbsp;</p>
+		</div>
+		<div class="track line2">
+			<p class="typography" id="type2">CROSS-BROWSER&nbsp;CROSS-BROWSER&nbsp;CROSS-BROWSER&nbsp;CROSS-BROWSER&nbsp;CROSS-BROWSER&nbsp;CROSS-BROWSER&nbsp;</p>
+		</div>
+		<div class="track line3">
+			<p class="typography" id="type1">FRAMEWORKS&nbsp;FRAMEWORKS&nbsp;FRAMEWORKS&nbsp;FRAMEWORKS&nbsp;FRAMEWORKS&nbsp;FRAMEWORKS&nbsp;</p>
+		</div>
+		<div class="track line4">
+			<p class="typography" id="type2">ACCESSIBILITY&nbsp;ACCESSIBILITY&nbsp;ACCESSIBILITY&nbsp;ACCESSIBILITY&nbsp;ACCESSIBILITY&nbsp;ACCESSIBILITY&nbsp;</p>
+		</div>
+		<div class="track line5">
+			<p class="typography" id="type1">PERF. OPTIMIZATION&nbsp;PERF. OPTIMIZATION&nbsp;PERF. OPTIMIZATION&nbsp;PERF. OPTIMIZATION&nbsp;PERF. OPTIMIZATION&nbsp;</p>
+		</div>
+	</div>
+	<!-- 스킬 -->
+	<section id="skills">
+		<div class="inner">
+			<div class="title">SKILLS</div>
+			<ul class="project-list">
+				<li class="project-item mouse-event">
+					<a href="" target="_blank">
+						<div class="col-left">
+							<strong>React</strong>
+						</div>
+						<div class="col-right">
+							<p>동적 웹 애플리케이션 개발 경험이 있으며, 컴포넌트 기반 아키텍처와<br>
+								상태 관리 라이브러리를 통해 효율적인 데이터 흐름을 구현했습니다.</p>
+							<p>Hooks, JSX, 리액트 라우터, Axios를 사용하여 함수형 컴포넌트 작성과<br>
+								API 통신 경험을 보유하고 있습니다.</p>
+						</div>
+						<div class="item-img">
+							<img src="img/React.jpg" alt="React">
+						</div>
+					</a>
+				</li>
+				<li class="project-item mouse-event">
+					<a href="" target="_blank">
+						<div class="col-left">
+							<strong>JavaScript</strong>
+						</div>
+						<div class="col-right">
+							<p>JavaScript를 활용한 동적 웹 애플리케이션 개발 경험이 있으며,<br>
+								ES6+ 문법과 AJAX를 통해 비동기 데이터 처리 및 API 통신을 수행했습니다.</p>
+							<p>또한, DOM 조작, 함수형 프로그래밍, JavaScript 라이브러리 활용, 모듈화 및<br>패키지 관리의 경험도 갖추고 있습니다.</p>
+						</div>
+						<div class="item-img">
+							<img src="img/JavaScript.png" alt="JavaScript">
+						</div>
+					</a>
+				</li>
+				<li class="project-item mouse-event">
+					<a href="" target="_blank">
+						<div class="col-left">
+							<strong>PWA</strong>
+						</div>
+						<div class="col-right">
+							<p>PWA를 활용하여 오프라인 지원과 빠른 로딩 경험을 제공하며,<br>
+								서비스 워커로 캐싱과 데이터 동기화를 구현했습니다.</p>
+							<P>이를 통해 웹 앱 매니페스트를 사용하여 홈 화면 추가와<br>
+								푸시 알림 기능으로 사용자 참여를 유도할 수 있는 역량을 갖추고 있습니다.</P>
+						</div>
+						<div class="item-img">
+							<img src="img/PWA.png" alt="PWA">
+						</div>
+					</a>
+				</li>
+				<li class="project-item mouse-event">
+					<a href="" target="_blank">
+						<div class="col-left">
+							<strong>SCSS</strong>
+						</div>
+						<div class="col-right">
+							<p>SCSS를 활용하여 효율적인 스타일링과 코드 관리를 수행한 경험이 있으며,<br>
+								중첩 기능과 믹스인으로 가독성 높은 스타일을 작성했습니다.</p>
+							<p>또한, 변수와 상속을 통해 일관된 스타일을 유지하고,<br>
+								반응형 웹 디자인 구현에도 참여한 경험이 있습니다.</p>
+						</div>
+						<div class="item-img">
+							<img src="img/SCSS.png" alt="SCSS">
+						</div>
+					</a>
+				</li>
+				<li class="project-item mouse-event">
+					<a href="" target="_blank">
+						<div class="col-left">
+							<strong>Tailwind CSS</strong>
+						</div>
+						<div class="col-right">
+							<p>유틸리티 클래스 기반의 Tailwind CSS를 활용하여 스타일링과 재사용 가능한<br>컴포넌트 조합을 통해 효율적으로 작업할 수 있는 기술을 갖추고 있습니다.</p>
+							<p>또한, Tailwind CSS의 커스터마이징 기능과 반응형 디자인 구현을 통해<br>
+								일관된 스타일을 유지할 수 있는 기술을 보유하고 있습니다.</p>
+						</div>
+						<div class="item-img">
+							<img src="img/Tailwind CSS.jpg" alt="Tailwind_CSS">
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<!-- 프로젝트 -->
+	<section id="project">
+		<div class="inner">
+			<div class="title">PROJECTS</div>
+		</div>
+		<div class="main-project">
+		<div class="inner-sticky">
+			<div class="group-item first" id="main">
+				<div class="img-wrap">
+					<div class="cont">
+						<h3>Project1<span class="serif">Customized WYLIE</span></h3>
+						<div class="group-bottom">
+							<p><span>GSAP</span> 를 적극 활용하여 커스터마이징한 JavaScript<span> 반응형 </span>프로젝트 입니다.</p>
+							<ul class="link-list">
+								<li>
+									<a href="https://github.com/Neos-od/AC_Milan-custom-?tab=readme-ov-file" class="link" target="_blank">
+										<span>Code Review</span>
+										<div class="svg-wrap"><svg width="32" height="32" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M8.15472 2.81673L13.8293 2.82734L13.8399 8.5019L12.758 8.5019L12.8004 4.66229L3.10242 14.3603L2.29631 13.5542L11.9943 3.85618L8.15472 3.89861L8.15472 2.81673Z" fill="currentColor"></path></svg></div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="video-wrap">
+						<div class="mask"></div>
+						<video loop autoplay muted playsinline data-object-fit="cover" id="RedSmoke"><source src="video/project1_video.mp4"></video>
+					</div>
+				</div>
+			</div>
+			<div class="group-item pin second">
+				<div class="img-wrap">
+					<div class="cont">
+						<h3>Project2<span class="serif">ArtCenter NAVI</span></h3>
+						<div class="group-bottom">
+							<p>디자인 클론 코딩, <span>jQuery</span> 활용에 중점을 둔 <span>반응형</span> 프로젝트 입니다.</p>
+							<ul class="link-list">
+								<li>
+									<a href="사이트 넣는 곳" target="_blank" class="link" >
+										<span>Code Review</span>
+										<div class="svg-wrap"><svg width="32" height="32" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M8.15472 2.81673L13.8293 2.82734L13.8399 8.5019L12.758 8.5019L12.8004 4.66229L3.10242 14.3603L2.29631 13.5542L11.9943 3.85618L8.15472 3.89861L8.15472 2.81673Z" fill="currentColor"></path></svg></div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="video-wrap">
+						<div class="mask"></div>
+						<video loop autoplay muted playsinline data-object-fit="cover" id="DarkBlue"><source src="video/project2_video.mp4"></video>
+					</div>
+				</div>
+			</div>
+			<div class="group-item pin third">
+				<div class="img-wrap">
+					<div class="cont">
+						<h3>Project3<span class="serif">Architecture Hub</span></h3>
+						<div class="group-bottom">
+							<p>웰컴 복지재단 사이트를 <span>jQuery</span> 와 <span>SwiperJS</span> 로 리뉴얼한 <span>반응형</span> 프로젝트 입니다.</p>
+							<ul class="link-list">
+								<li>
+									<a href="사이트 넣는 곳" target="_blank" class="link">
+										<span>Code Review</span>
+										<div class="svg-wrap"><svg width="32" height="32" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M8.15472 2.81673L13.8293 2.82734L13.8399 8.5019L12.758 8.5019L12.8004 4.66229L3.10242 14.3603L2.29631 13.5542L11.9943 3.85618L8.15472 3.89861L8.15472 2.81673Z" fill="currentColor"></path></svg></div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="video-wrap">
+						<div class="mask"></div>
+						<video loop autoplay muted playsinline data-object-fit="cover" id="ForceGreen"><source src="video/project3_video.mp4"></video>
+					</div>
+				</div>
+			</div>
+			<div class="group-item pin fourth">
+				<div class="img-wrap">
+					<div class="cont">
+						<h3>Project4<span class="serif">MaryMond</span></h3>
+						<div class="group-bottom">
+							<p>직관적인 그리드 기반 레이아웃으로 <span>jQuery</span> 를 활용한 프로젝트 입니다.</p>
+							<ul class="link-list">
+								<li>
+									<a href="사이트 넣는 곳" target="_blank" class="link">
+										<span>Code Review</span>
+										<div class="svg-wrap"><svg width="32" height="32" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg""><path d="M8.15472 2.81673L13.8293 2.82734L13.8399 8.5019L12.758 8.5019L12.8004 4.66229L3.10242 14.3603L2.29631 13.5542L11.9943 3.85618L8.15472 3.89861L8.15472 2.81673Z" fill="currentColor"></path></svg></div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="video-wrap">
+						<div class="mask"></div>
+						<video loop autoplay muted playsinline data-object-fit="cover"><source src="video/project4_video.mp4"></video>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</section>
+	<!-- 코맨트-->
+	 <div class="comment">
+		<span class="pre aosup"><span>M</span>ake <span>A</span> <span>S</span>pecial <span>P</span>roject <span>O</span>f <span>F</span>un!</span>
+	</div>
+	<!-- 오픈소스 -->
+	<section id="open_source">
+		<div class="update">
+			<span class="update_text d_only">
+				<img src="img/main_update_top.png" class="update_top" alt="update top">
+				<img src="img/main_update_bottom.png" class="update_bottom" alt="update bottom">
+			</span>
+			<div class="swiper_wrap">
+				<div class="swiper updateSwiper">
+					<div class="swiper-wrapper">
+						<!-- 1번 -->
+						<div class="swiper-slide">
+							<div class="swiper_bg">
+								<div class="swiper_text pre">
+									<p class="cate">
+										<span>Open Source</span>
+										<span class="date">2025.03.15</span>
+									</p>
+									<p class="tit">DAESANG - GNB 제작</p>
+									<p class="txt">인터랙션 : 네비게이션 바 개별 슬라이드,<br>Tab메뉴 슬라이드 jQuery구현</p>
+									<a href="" class="hlv">Read More</a>
+								</div>
+							</div>
+						</div>
+						<!-- 2번 -->
+						<div class="swiper-slide">
+							<div class="swiper_bg">
+								<div class="swiper_text pre">
+									<p class="cate">
+										<span>Open Source</span>
+										<span class="date">2025.03.16</span>
+									</p>
+									<p class="tit">새만금메타버스체험관 - GNB 제작</p>
+									<p class="txt">인터랙션 : 네비게이션 바 전체 슬라이드,<br>language 클릭기능 + Tab메뉴 슬라이드 jQuery구현</p>
+									<a href="" class="hlv">Read More</a>
+								</div>
+							</div>
+						</div>
+						<!-- 3번 -->
+						<div class="swiper-slide">
+							<div class="swiper_bg">
+								<div class="swiper_text pre">
+									<p class="cate">
+										<span>Open Source</span>
+										<span class="date">2024.03.17</span>
+									</p>
+									<p class="tit">DESIGNDIGIT AGENCY - 팝업 제작</p>
+									<p class="txt">팝업창 하단 : 오늘 하루 보지않기,<br>7일동안 보지 않기 - 개별 구현</p>
+									<a href="" class="hlv">Read More</a>
+								</div>
+							</div>
+						</div>
+						<!-- 4번 -->
+						<div class="swiper-slide">
+							<div class="swiper_bg">
+								<div class="swiper_text pre">
+									<p class="cate">
+										<span>Open Source</span>
+										<span class="date">2025.03.18</span>
+									</p>
+									<p class="tit">하나투어 - 개별 슬라이더 인터랙션</p>
+									<p class="txt">인터렉션 : Swiper슬라이더를 사용한 이미지 자동 슬라이더,<br>Prev,Next,Pause 클릭버튼 추가</p>
+									<a href="" class="hlv">Read More</a>
+								</div>
+							</div>
+						</div>
+						<!-- 5번 -->
+						<div class="swiper-slide">
+							<div class="swiper_bg">
+								<div class="swiper_text pre">
+									<p class="cate">
+										<span>Open Source</span>
+										<span class="date">2025.03.19</span>
+									</p>
+									<p class="tit">Card style - 구간별 반응형 해상도 + 슬라이더</p>
+									<p class="txt">인터랙션 : Swiper슬라이더 사용,<br>정해진 해상도구간 마다 이미지 갯수 정렬</p>
+									<a href="" class="hlv">Read More</a>
+								</div>
+							</div>
+						</div>
+						<!-- 6번 -->
+						<div class="swiper-slide">
+							<div class="swiper_bg">
+								<div class="swiper_text pre">
+									<p class="cate">
+										<span>Open Source</span>
+										<span class="date">2025.03.20</span>
+									</p>
+									<p class="tit">글로벌 뷰티 - 슬라이더 + 프로그레스 바 타이머</p>
+									<p class="txt">인터랙션 : jQuery 자동슬라이더 + 슬라이더 이동시간 설정,<br>이동시간에 따른 프로그레스바 게이지 제작 + Prev,Next버튼 추가</p>
+									<a href="" class="hlv">Read More</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- 클릭버튼 -->
+					<div class="d_only">
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-pagination hlv"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- 여백 공간 -->
+	<div class="negative_space">
+	</div>
+	<!-- 푸터 -->
+	<section id="footer">
+		<div class="ft_inner">
+			<div class="ft_left">
+				<div class="ft_video">
+					<video id="ftVideo" loop muted>
+						<source src="./video/footer.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+				</div>
+			</div>
+			<div class="ft_right">
+				<div class="ft_text">
+					<div class="top">
+						<Strong>Explore More</Strong>
+						<span>Thank you for watching. <br>
+							For more information, please visit the link below.</span>
+					</div>
+					<div class="ft_icon">
+						<ul class="box">
+							<li><a href=""><img src="img/Black GitHub.png" alt="GitHub"></a></li>
+							<li>or</li>
+							<li><a href=""><img src="img/Black Notion.png" alt="Notion"></a></li>
+						</ul>
+					</div>
+					<div class="bot">
+						<span>name: Lee SungMin</span>
+						<span>e-mail: dta006009@gmail.com</span>
+						<span>© 2025 Lee-SungMin All Rights Reserved</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+</body>
+</html>
