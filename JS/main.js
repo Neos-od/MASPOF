@@ -166,7 +166,7 @@ window.addEventListener("load", function(){
 			console.error("자동 재생 실패:", error);
 	});
 
-	// 스킬 li 호버시 이미지 보이기 : jQuery
+	// 스킬 li 호버시 이미지 보이기
 	$(function(){
 		$("#skills .item-img").each(function(i, element){
 			$(element).mousemove(function(e){

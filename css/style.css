@@ -1,6 +1,5 @@
 @charset "utf-8";
 
-/* 리셋 */
 body, h1, h2, h3, h4, h5, h6, p, ul, ol, table, dl, dd {
 	margin: 0;
 	padding: 0;
@@ -15,7 +14,6 @@ a {
 	text-decoration: none;
 	color: #000;
 	transition: 0.2s ease;
-	/* cursor: none; */
 }
 ul, ol {
 	list-style: none;
@@ -28,52 +26,41 @@ img {
 }
 html {
 	height: 100%;
-	/* 색상 반전 */
-	/* filter: invert(1) hue-rotate(180deg); */
 }
 body {
-	font-family: "Orbitron", "Roboto", "Noto Sans KR", sans-serif;
+	font-family: "Orbitron", "Noto Sans KR", sans-serif;
 	background-color: #000;
 	height: 100%;
 	font-size: 1vw;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	/* cursor: none; */
-	/* overflow: hidden; */
 	overflow-x: hidden;
 	color: #000;
 }
-/* body.scroll-on {
-	overflow: visible;
-	overflow-x: hidden;
-} */
 
-/* 세로 스크롤바 커스텀 */
 body::-webkit-scrollbar {
-	width: 8px;  /* 스크롤바의 너비 */
+	width: 8px;
 }
 
 body::-webkit-scrollbar-thumb {
-	height: 5%; /* 스크롤바의 길이 */
+	height: 5%;
 	background-color: #007BFF;
 	border-radius: 10px;
 }
 
 body::-webkit-scrollbar-track {
-	background: #000;  /*스크롤바 뒷 배경 색상*/
+	background: #000;
 }
 
 img, picture, video, canvas, svg {
 	display: block;
 }
 
-/* 히든 */
 .hidden {
 	opacity: 0;
-	pointer-events: none; /* 클릭 방지 */
+	pointer-events: none;
 }
 
-/* 커스텀 마우스 */
 #customMouse {
 	width: 16px;
 	height: 16px;
@@ -82,10 +69,10 @@ img, picture, video, canvas, svg {
 	position: fixed;
 	top: 0;
 	left: 0;
-	pointer-events: none; /* 클릭 방해 방지 */
+	pointer-events: none;
 	transform: translate(-50%, -50%);
 	transition: top 0.05s linear, left 0.05s linear;
-	z-index: 999; /* 최상단 표시 */
+	z-index: 999;
 }
 @media all and (max-width: 768px) {
 	#customMouse {
@@ -93,7 +80,6 @@ img, picture, video, canvas, svg {
 	}
 }
 
-/* 컨트롤러 */
 .controller {
 	position: fixed;
 	right: 30px;
@@ -115,7 +101,6 @@ img, picture, video, canvas, svg {
 	margin-top: 0;
 }
 .controller li a {
-	font-family: "Orbitron";
 	font-size: 1em;
 	font-weight: 400;
 	color: #fff;
@@ -128,7 +113,6 @@ img, picture, video, canvas, svg {
 	}
 }
 
-/* 컨트롤러 반응형 */
 @media only screen and ( max-width: 1280px ) {
 	.controller li a {
 		font-size: 1.25em;
@@ -158,14 +142,13 @@ img, picture, video, canvas, svg {
 	}
 }
 
-/* 헤더 */
 header {
 	position: absolute;
 	height: 100px;
 	width: 100%;
 	z-index: 100;
 }
-/* 헤더 픽시드 */
+
 header.fixed {
 	position: fixed;
 	left: 0;
@@ -187,7 +170,6 @@ header .inner {
 }
 header .inner .logo h1 {
 	font-size: 1.25em;
-	font-family: "Orbitron", sans-serif;
 	color: #fff;
 	font-weight: 700;
 	letter-spacing: 0.8em;
@@ -197,7 +179,6 @@ header .inner nav ul {
 	display: flex;
 }
 header .inner nav ul li {
-	font-family: "Orbitron", sans-serif;
 	font-size: 0.875em;
 	font-weight: 700;
 }
@@ -211,12 +192,10 @@ header .inner nav ul li a:last-child {
 	padding: 0 0 0 21px;
 }
 
-/* nav 호버 */
 header .inner nav ul li.active a {
 	color: #007BFF;
 }
 
-/* 헤더 내비 반응형 */
 @media only screen and (max-width: 1470px){
 	header {
 		font-size: 1.25em;
@@ -252,7 +231,6 @@ header .inner nav ul li.active a {
 	}
 }
 
-/* 메인 */
 #start {
 	position: relative;
 }
@@ -270,7 +248,7 @@ header .inner nav ul li.active a {
 	text-align: center;
 	text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
 }
-/* 메인 타이틀 */
+
 #start .mainP .inner .group_text .title .strong_text h2 {
 	font-size: 5.5em;
 	font-weight: 700;
@@ -312,13 +290,11 @@ header .inner nav ul li.active a {
 	white-space: nowrap;
 }
 
-/* 메인 비디오 */
 #start .mainP .main_video {
 	position: relative;
 	width: 100%;
 	overflow: hidden;
 }
-/* 비디오 톤 설정 */
 #start .mainP .main_video video {
 	width: 100%;
 	height: 100vh;
@@ -326,7 +302,7 @@ header .inner nav ul li.active a {
 	object-fit: cover;
 }
 
-/* 메인 반응형 */
+
 @media only screen and (max-width: 1280px){
 	#start .mainP .inner .group_text .title .strong_text h2 {
 		font-size: 7em;
@@ -380,9 +356,6 @@ header .inner nav ul li.active a {
 	}
 }
 
-
-
-/* 섹션 */
 section .inner {
 	max-width: 70%;
 	margin: 0 auto;
@@ -398,7 +371,6 @@ section .inner .title {
 	letter-spacing: 0.3em;
 }
 
-/* 섹션 반응형 */
 @media only screen and (max-width: 1280px){
 	section .inner {
 		max-width: 80%;
@@ -427,7 +399,6 @@ section .inner .title {
 
 }
 
-/* 자기소개 */
 #about_me {
 	padding: 150px 0 400px 0;
 	background-color: #000;
@@ -439,7 +410,6 @@ section .inner .title {
 	text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
 }
 #about_me .inner .text_box .strong_text {
-	font-family: "Orbitron", sans-serif;
 	font-size: 2.5em;
 	font-weight: normal;
 	color: #fff;
@@ -463,7 +433,6 @@ section .inner .title {
 	margin-bottom: 80px;
 }
 
-/* 자기소개 반응형 */
 @media only screen and (max-width: 1280px){
 	#about_me {
 		padding: 150px 0 200px 0;
@@ -507,7 +476,6 @@ section .inner .title {
 }
 
 
-/* 라인 이펙트 */
 .line_effect {
 	padding-bottom: 400px;
 	overflow: hidden;
@@ -519,16 +487,10 @@ section .inner .title {
 .line_effect .track .typography {
 	line-height: 1;
 	white-space: nowrap;
-	font-family: "Orbitron", sans-serif;
 	font-size: 120px;
 	font-weight: 900;
 }
-.line_effect .track .typography span {
-	margin-right: 50px;
-	font-family: "Orbitron", sans-serif;
-	font-size: 0.15em;
-	font-weight: 900;	
-}
+
 #type1 {
 	color: #fff;
 }
@@ -561,7 +523,6 @@ section .inner .title {
 	}
 }
 
-/* 스킬 */
 #skills {
 	width: 100%;
 	padding: 0 0 400px 0;
@@ -599,12 +560,12 @@ section .inner .title {
 	color: #fff;
 }
 #skills .project-list .project-item a .col-left strong {
-	font-family: "Orbitron", sans-serif;
 	font-weight: normal;
 }
 #skills .project-list .project-item a .col-right {
 	width: 50%;
 	color: #fff;
+	font-family: "Roboto", sans-serif;
 }
 #skills .project-list .project-item a .col-right p {
 	align-self: flex-end;
@@ -631,7 +592,6 @@ section .inner .title {
 	opacity: 1;
 }
 
-/* 스킬 반응형 */
 @media only screen and (max-width: 1280px) {
 	#skills {
 		padding: 0 0 200px 0;
@@ -666,11 +626,6 @@ section .inner .title {
 	}
 }
 @media only screen and (max-width: 767px) {
-	/* #skills h2 {
-		padding-left: 0%;
-		padding-bottom: 2em;
-		font-size: 3.6em;
-	} */
 	#skills .project-list .project-item a {
 		flex-direction: column;
 		grid-column-gap: 2em;
@@ -706,13 +661,10 @@ section .inner .title {
 	}
 }
 
-/* 프로젝트 */
 #project .inner .title {
 	border-bottom: 1px solid rgba(255,255,255,.1);
 	box-sizing: border-box;
 }
-
-/* 프로젝트 스티키 방법 */
 
 .main-project {
 	position: relative;
@@ -762,7 +714,7 @@ section .inner .title {
 	border-radius: 0.3em;
 	text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
 }
-/* 프로젝트 세리프 */
+
 .main-project .inner-sticky .group-item .cont h3 .serif {
 	display: block;
 	white-space: pre-wrap;
@@ -802,13 +754,7 @@ section .inner .title {
 }
 .main-project .inner-sticky .group-item .cont .group-bottom .link-list li:first-child a {
 	border-color: #fff;
-	font-family: "Orbitron", sans-serif;
 	text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
-}
-.main-project .inner-sticky .group-item .cont .group-bottom .link-list li:first-child a:hover {
-	background-color: #000;
-	color: #007BFF;
-	border-color: #fff;
 }
 .main-project .inner-sticky .group-item .cont .group-bottom .link-list li a span {
 	line-height: 1.75;
@@ -822,11 +768,6 @@ section .inner .title {
 	align-items: center;
 	width: 1.1em;
 	height: 1.1em;
-}
-.main-project .inner-sticky .group-item .cont .group-bottom .link-list li a:hover {
-	background-color: #fff;
-	color: #101214;
-	transition: 0.3s ease-in-out;
 }
 .main-project .inner-sticky .group-item .cont .group-bottom .toll-list {
 	display: flex;
@@ -847,6 +788,7 @@ section .inner .title {
 }
 .main-project .inner-sticky .group-item .cont .group-bottom p {
 	line-height: 1.92;
+	font-family: "Roboto", sans-serif;
 	font-weight: 400;
 	letter-spacing: -0.025em;
 	color: #bbb;
@@ -934,6 +876,13 @@ section .inner .title {
 }
 
 /* 프로젝트 반응형 */
+@media only screen and (min-width: 768px) {
+	.main-project .inner-sticky .group-item .cont .group-bottom .link-list li a:hover {
+	background-color: #000;
+	color: #007BFF;
+	transition: 0.3s ease-in-out;	
+	}
+}
 @media only screen and (max-width: 1280px) {
 	.main-project .inner-sticky .group-item .cont h3 {
 		font-size: 9em;
@@ -1384,7 +1333,6 @@ section .inner .title {
 }
 #footer .ft_inner .ft_right .ft_text strong {
 	display: block;
-	font-family: "Orbitron", sans-serif;
 	font-size: 2em;
 	font-weight: 500;
 	color: #ccc;
