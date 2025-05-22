@@ -1119,7 +1119,7 @@ section .inner .title {
 	height: 100%;
 }
 .update .swiper .swiper-slide .swiper_text {
-	padding: 72px 100px;
+	padding: 32px 100px 72px 100px;
 	line-height: 1.2;
 	height: 100%;
 	color: #fff;
