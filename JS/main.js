@@ -75,7 +75,7 @@ window.addEventListener("load", function(){
 	window.addEventListener('scroll', () => {
 		const scrollY = window.scrollY;
 
-    // 화면 너비가 768px 이상인지 확인
+    // 화면 너비가 1281px 이상인지 확인
     if (window.innerWidth >= 1281) {
       // 2800px 스크롤했을 때 숨김
       if (scrollY > 2800) {
