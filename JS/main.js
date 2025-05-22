@@ -76,7 +76,7 @@ window.addEventListener("load", function(){
 		const scrollY = window.scrollY;
 
     // 화면 너비가 768px 이상인지 확인
-    if (window.innerWidth >= 768) {
+    if (window.innerWidth >= 1281) {
       // 2800px 스크롤했을 때 숨김
       if (scrollY > 2800) {
           fixedElement.classList.remove('hidden');
@@ -94,7 +94,7 @@ window.addEventListener("load", function(){
         }
     }
 		else {
-			// 768px 이하에서는 항상 보이기
+			// 1281px 이하에서는 항상 보이기
 			fixedElement.classList.remove('hidden');
 			contElement.classList.remove('hidden');
     }
@@ -202,7 +202,7 @@ window.addEventListener("load", function(){
 			scrub: 0,
 			start: "0 0",
 			end: "100% 100%",
-			// markers: true
+			markers: true
 		}
 	});
 
@@ -280,7 +280,6 @@ window.addEventListener("load", function(){
 
 		updateTl.to(".updateSwiper", { display: "block", height: 400 }, "ontime2");
 
-		updateTl.to(".update_btn", { display: "block", opacity: 1});
 	});
 
 	mediaQuery.add("(max-width: 768px)", function(){
@@ -295,16 +294,6 @@ window.addEventListener("load", function(){
 			}
 		});
 
-		gsap.from(".update_title", {
-			y: -50,
-			opacity: 0,
-			duration: 1,
-			scrollTrigger: {
-				trigger: ".update",
-				start: "top 80%",
-				toggleActions: "play none none reset"
-			}
-		});
 	});
 
 	// 푸터 글자띄우기

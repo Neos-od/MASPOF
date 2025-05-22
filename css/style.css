@@ -525,7 +525,8 @@ section .inner .title {
 
 #skills {
 	width: 100%;
-	padding: 0 0 400px 0;
+	padding: 0 0 250px 0;
+	height: 2000px;
 }
 #skills .title {
 	border-bottom: 1px solid rgba(255,255,255,.1);
@@ -660,7 +661,6 @@ section .inner .title {
 		font-size: 4em;
 	}
 }
-
 #project .inner .title {
 	border-bottom: 1px solid rgba(255,255,255,.1);
 	box-sizing: border-box;
@@ -684,7 +684,7 @@ section .inner .title {
 }
 .main-project .inner-sticky .group-item {
 	position: relative;
-	width: 80%;
+	width: 100%;
 	height: 100%;
 	overflow: hidden;
 	background-color: #000;
@@ -1013,15 +1013,6 @@ section .inner .title {
 		display: block;
 		font-size: 3.6em;
 	}
-
-	/* 반응형 프로젝트 첫번째 화면 */
-
-	/* .main-project .inner-sticky .first h3 {
-		font-size: 9em !important;
-	}
-	.main-project .inner-sticky .first .serif {
-		font-size: 0.722em !important;
-	} */
 }
 
 /* 오픈소스 */
