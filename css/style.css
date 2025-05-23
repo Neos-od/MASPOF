@@ -523,10 +523,10 @@ section .inner .title {
 	}
 }
 
+/* 스킬 */
+
 #skills {
-	width: 100%;
 	padding: 0 0 250px 0;
-	height: 2000px;
 }
 #skills .title {
 	border-bottom: 1px solid rgba(255,255,255,.1);
@@ -661,9 +661,11 @@ section .inner .title {
 		font-size: 4em;
 	}
 }
+
+/* 프로젝트 */
+
 #project .inner .title {
 	border-bottom: 1px solid rgba(255,255,255,.1);
-	box-sizing: border-box;
 }
 
 .main-project {
