@@ -199,7 +199,7 @@ window.addEventListener("load", function(){
 	const projectTl2=gsap.timeline({
 		scrollTrigger: {
 			trigger: ".main-project",
-			scrub: 1,
+			scrub: 0,
 			start: "20% 0",
 			end: "100% 100%"
 			// markers: true
