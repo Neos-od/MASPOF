@@ -201,8 +201,8 @@ window.addEventListener("load", function(){
 			trigger: ".main-project",
 			scrub: 1,
 			start: "20% 0",
-			end: "100% 100%",
-			markers: true
+			end: "100% 100%"
+			// markers: true
 		}
 	});
 
