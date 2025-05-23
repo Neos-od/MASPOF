@@ -200,7 +200,7 @@ window.addEventListener("load", function(){
 		scrollTrigger: {
 			trigger: ".main-project",
 			scrub: 0,
-			start: "20% 0",
+			start: "0 0",
 			end: "100% 100%"
 			// markers: true
 		}
