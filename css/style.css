@@ -189,7 +189,6 @@ section .inner .title { padding: 50px 0; color: #007BFF; font-family: "Roboto", 
 .update .swiper .swiper-slide .swiper_text { padding: 72px 100px; line-height: 1.2; height: 100%; color: #fff; box-sizing: border-box; } 
 .update .swiper .swiper-slide .cate { margin-bottom: 10px; width: 320px; font-weight: 500; } 
 .update .swiper .swiper-slide .cate span { display: block; font-family: "Roboto", sans-serif; } 
-.update .swiper .swiper-slide .cate .date { margin-top: 20px; font-size: 1em; font-weight: 400; } 
 .update .swiper .swiper-slide .swiper_text .tit { margin: 10px 0 20px; width: 100%; line-height: 1.5; font-size: 1.5em; font-weight: 500; } 
 .update .swiper .swiper-slide .swiper_text .txt { width: 100%; font-family: "Roboto", sans-serif; line-height: 1.5; font-weight: 300; } 
 .update .swiper .swiper-slide .swiper_text .tit, .update .swiper .swiper-slide .swiper_text .txt { display: -webkit-box; -webkit-box-orient: vertical; word-spacing: -0.5px; } 
