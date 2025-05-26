@@ -202,7 +202,7 @@ window.addEventListener("load", function(){
 			scrub: 0,
 			start: "0 0",
 			end: "100% 100%",
-			markers: true
+			// markers: true
 		}
 	});
 
