@@ -193,7 +193,7 @@ window.addEventListener("load", function(){
 	});
 
 	projectTl1
-	.to(".main-project .first", { width: "100%" }, "a")
+	.to(".main-project .first", { width: "100%", height: "100%" }, "a")
 	// .from(".main-project", { yPercent: 1 }, "a");
 
 	const projectTl2=gsap.timeline({
@@ -201,8 +201,8 @@ window.addEventListener("load", function(){
 			trigger: ".main-project",
 			scrub: 0,
 			start: "0 0",
-			end: "100% 100%"
-			// markers: true
+			end: "100% 100%",
+			markers: true
 		}
 	});
 
