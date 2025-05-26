@@ -24,9 +24,6 @@ img {
 	vertical-align: top;
 	border: none;
 }
-html {
-	height: 100%;
-}
 body {
 	font-family: "Orbitron", "Noto Sans KR", sans-serif;
 	background-color: #000;
@@ -52,8 +49,8 @@ body::-webkit-scrollbar-track {
 	background: #000;
 }
 
-img, picture, video, canvas, svg {
-	display: block;
+.container {
+	height: 100%;
 }
 
 .hidden {
@@ -526,8 +523,10 @@ section .inner .title {
 /* 스킬 */
 
 #skills {
-	padding: 0 0 250px 0;
+	box-sizing: border-box;
+	height: 2400px;
 }
+
 #skills .title {
 	border-bottom: 1px solid rgba(255,255,255,.1);
 }
@@ -593,11 +592,20 @@ section .inner .title {
 	opacity: 1;
 }
 
+@media only screen and (max-width: 1900px) {
+	#skills {
+		height: 2000px;
+	}
+}
+@media only screen and (max-width: 1450px) {
+	#skills {
+		height: 1800px;
+	}
+}
 @media only screen and (max-width: 1280px) {
 	#skills {
-		padding: 0 0 200px 0;
+		height: 1600px;
 	}
-	
 	#skills .project-list .project-item a .col-left {
 		font-size: 1.5em;
 	}
@@ -606,6 +614,9 @@ section .inner .title {
 	}
 }
 @media only screen and (max-width: 1160px) {
+	#skills {
+		height: 1700px;
+	}
 	#skills .project-list .project-item a .col-left {
 		font-size: 1.75em;
 	}
@@ -614,6 +625,9 @@ section .inner .title {
 	}
 }
 @media only screen and (max-width: 1023px) {
+	#skills {
+		height: 2200px;
+	}
 	#skills .project-list .project-item a .col-left {
 		font-size: 2em;
 		font-weight: 400;
@@ -626,7 +640,25 @@ section .inner .title {
 		font-weight: 300;
 	}
 }
+@media only screen and (max-width: 930px) {
+	#skills {
+		height: 2100px;
+	}
+}
+@media only screen and (max-width: 910px) {
+	#skills {
+		height: 2000px;
+	}
+}
+@media only screen and (max-width: 880px) {
+	#skills {
+		height: 1900px;
+	}
+}
 @media only screen and (max-width: 767px) {
+	#skills {
+		height: 2000px;
+	}
 	#skills .project-list .project-item a {
 		flex-direction: column;
 		grid-column-gap: 2em;
@@ -653,7 +685,20 @@ section .inner .title {
 		width: 50em;
 	}
 }
+@media only screen and (max-width: 700px) {
+	#skills {
+		height: 1800px;
+	}
+}
+@media only screen and (max-width: 650px) {
+	#skills {
+		height: 1700px;
+	}
+}
 @media only screen and (max-width: 540px) {
+	#skills {
+		height: 2000px;
+	}
 	#skills .project-list .project-item a .col-left {
 		font-size: 7em;
 	}
@@ -661,9 +706,48 @@ section .inner .title {
 		font-size: 4em;
 	}
 }
+@media only screen and (max-width: 510px) {
+	#skills {
+		height: 1900px;
+	}
+}
+@media only screen and (max-width: 470px) {
+	#skills {
+		height: 1800px;
+	}
+}
+@media only screen and (max-width: 440px) {
+	#skills {
+		height: 1600px;
+	}
+}
+@media only screen and (max-width: 410px) {
+	#skills {
+		height: 1500px;
+	}
+}
+@media only screen and (max-width: 380px) {
+	#skills {
+		height: 1400px;
+	}
+}
+@media only screen and (max-width: 360px) {
+	#skills {
+		height: 1300px;
+	}
+}
+@media only screen and (max-width: 330px) {
+	#skills {
+		height: 1200px;
+	}
+}
+@media only screen and (max-width: 300px) {
+	#skills {
+		height: 1100px;
+	}
+}
 
 /* 프로젝트 */
-
 #project .inner .title {
 	border-bottom: 1px solid rgba(255,255,255,.1);
 }
